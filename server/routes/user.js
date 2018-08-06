@@ -1,7 +1,7 @@
 var express = require('express')
 var shortid = require('shortid')
 var router = express.Router()
-var User = require('../models/User')
+var User = require('../models/user')
 
 router.get('/', function (req, res) {
   User.find({}).exec(function (err, models) {
